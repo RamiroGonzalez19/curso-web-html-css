@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        thead,tr,th,td {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>TABLAS</h1>
+
+    <h2>Tabla comun</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Ramiro
+                </td>
+                <td>
+                    Gonzalez
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+    </table>
+
+    <h2>Tabla con colspan</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2"> Nombre Completo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ramiro</td>
+                <td>Gonzalez</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+    </table>
+
+
+    <h2>Tabla con rowspan</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <b>Nombre</b>
+                </td>
+                <td>eduardo</td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <b>Telefonos de contacto</b>
+                </td>
+                <td>123456</td>
+            </tr>
+            <tr>
+                <td>123455</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

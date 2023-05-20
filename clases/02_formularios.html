@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    
+    <form name="Formulario Contacto" method="get" action="" enctype="multipart/form-data"> <!-- Sin el enctype no se podran enviar varios archivos simultaneamente, IMPORTANE! -->
+       
+        <fieldset>
+            <legend>Primer Fieldset</legend>
+            <label for="firstname"> Primer nombre </label>
+            <input name="firstname" type="text" placeholder="Ingrese su primer nombre" value="Ramiro" disabled>
+            <br>
+            <label for="firstname"> Contraseña </label>
+            <input type="password" name="password" placeholder="Ingrese su contraseña" requiredx>
+            <br>
+            <label for="acuerdo"> esta de acuerdo con los terminos? </label>
+            <input type="checkbox" name="acuerdo" required>
+        </fieldset>
+
+        <br>
+        
+        <fieldset>
+            <legend>Genero</legend>
+            <label for="gender">Genero</label>
+            <br>
+            <label>Mujer: </label>
+            <input type="radio" name="gender" value="M">
+            <label>Hombre: </label>
+            <input type="radio" name="gender" value="H">
+            <label>No Binario: </label>
+            <input type="radio" name="gender" value="NB">
+            <label>Otro: </label>
+            <input type="radio" name="gender" value="O">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Otros</legend>
+            <label for="archivo"> Archivo </label>
+            <input type="file" name="archivo" multiple>
+
+            <br>
+
+            <label for="reset">Restablecer</label>
+            <input type="reset" name="reset">
+
+            <br>
+
+            <label for="descripcion">Texarea: </label>
+            <textarea name="descripcion" cols="30" rows="10"></textarea>
+
+            <br>
+
+            <label for="seleccion"> Marca de autos</label>
+            <select name="marcas">
+                <option value="toyota">Toyota</option>
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+            </select>
+
+            <label for="modelo">Modelo</label>
+            <select name="modelo">
+                <optgroup label="Toyota">
+                    <option value="sw4">SW4</option>
+                    <option value="yaris">Yaris</option>
+                </optgroup>
+                <optgroup label="Chevrolet">
+                    <option value="cruze">Cruze</option>
+                    <option value="camaro">Camaro</option>
+                </optgroup>
+                <optgroup label="Volkswagen">
+                    <option value="golf">Golf</option>
+                    <option value="vento">Vento  </option>
+                </optgroup>
+  
+            </select>
+
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Enviar">
+        
+    </form>
+</body>
+</html>
