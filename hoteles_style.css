@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    font-family: 'Archivo', sans-serif;
+    margin-top: 75px;
+    text-align: center;
+    background-color: black;
+}
+
+#hbrc {
+    background-color: black;
+    position: relative;
+    border: 1px solid black;
+    min-height: 50vh;
+    color: aliceblue;
+
+}
+
+#hvcp {
+    background-color: black;
+    position: relative;
+    border: 1px solid black;
+    min-height: 50vh;
+    color: aliceblue;
+    margin-top: 100px;
+}

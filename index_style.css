@@ -1,0 +1,276 @@
+body {
+    margin: 0px;
+    font-family: 'Archivo', sans-serif;
+    margin-top: 75px;
+    background-color: crimson;
+}
+
+header {
+    background-color: crimson;
+    color: azure;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    width: calc(100% - 10px - 10px);
+    z-index: 1;
+}
+
+nav {
+    float: right;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: azure;
+}
+
+.item {
+    padding: 10px;
+
+}
+
+#home {
+    background-color: crimson;
+    /* height: 800px; */
+    position: relative;
+    border: 1px solid black;
+    min-height: 100vh;
+}
+
+#container-1.subcontainer-home {
+    position: absolute;
+    left: 120px;
+    top: 100px;
+}
+
+#container-2.subcontainer-home {
+    position: absolute;
+    left: 140px;
+    top: 160px;
+
+}
+
+#hoteles {
+    background-color: crimson;
+    /* height: 800px; */
+    position: relative;
+    border: 1px solid black;
+    min-height: 100vh;
+    background-image: url(./img/hoteles-seccion2.png);
+    background-size: 100%;
+}
+
+#discos {
+    background-color: crimson;
+    /* height: 800px; */
+    position: relative;
+    border: 1px solid black;
+    min-height: 100vh;
+    background-image: url(./img/boliche-discos.png);
+}
+
+#nosotros {
+    background-color: crimson;
+    /* height: 800px; */
+    position: relative;
+    border: 1px solid black;
+    min-height: 100vh;
+}
+
+#contacto {
+    background-color: crimson;
+    /* height: 800px; */
+    position: relative;
+    border: 1px solid black;
+    min-height: 100vh;
+}
+
+.container-hoteles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+
+
+}
+
+#container-2.subcontainer-hoteles {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 1px solid black;
+
+}
+
+#container-1.subcontainer-hoteles {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#container-3.subcontainer-hoteles {
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: 1px solid black;
+}
+
+.container-discos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#container-1.subcontainer-discos {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    border: 2px solid azure;
+
+}
+
+#container-2.subcontainer-discos {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 2px solid azure;
+
+}
+
+#container-3.subcontainer-discos {
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: 2px solid azure;
+
+}
+
+.discos-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.img1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 15px;
+    border: 1px solid azure;
+}
+
+.img2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 15px;
+    border: 1px solid azure;
+}
+
+.img3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 15px;
+    border: 1px solid azure;
+}
+
+.img4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 15px;
+    border: 1px solid azure;
+}
+
+.container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#container-2.subcontainer-nosotros {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 1px solid black;
+
+}
+
+#container-1.subcontainer-nosotros {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#container-3.subcontainer-nosotros {
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: 1px solid black;
+}
+
+h2 {
+    margin-top: 100px;
+}
+
+.container-contacto {
+    text-align: center;
+}
+
+.footer-redes {
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: azure;
+}
+
+p {
+    color: azure;
+}
+
+h1 {
+    font-size: 100px;
+    color: azure;
+}
+
+h2 {
+    font-size: 50px;
+    color: azure;
+}
+
+h3 {
+    font-size: 20px;
+    color: azure;
+}
+
+h4 {
+    font-size: 15px;
+    color: azure;
+}
+
+#slogan {
+    font-size: 70px;
+    color: azure;
+}
+
+#color-li-hoteles {
+    color: azure;
+}

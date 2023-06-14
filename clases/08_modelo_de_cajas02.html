@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        *{
+
+            font-family: 'Gasoek One', sans-serif;
+            font-size: 30px;
+        }
+        body{
+            margin: 20px
+        }
+        .container{
+            border: 1px solid black; /*el primer parametro se encarga del expesor del borde, el segundo parametro sobre el estilo, y el tercer parametro sobre el color*/
+            width: 500px;
+            padding: 50px; /*la etiqueta padding siempre es la distancia contra el contenido de si mismo*/
+            margin-bottom: 10px; /*la etiqueta margin siempre es la distancia contra otros elementos*/
+        }
+        img{
+            width: 100%;
+        }
+        .segunda-clase{
+            /* display: none; */
+            visibility: hidden; 
+            /* margin-top: 10px;  */ 
+        }
+        table, tr, td, th{
+            border: 1px solid black;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+        #th-1{
+            background-color: red;
+        }
+        #th-2{
+            background-color: blue;
+        }
+        #th-3{
+            background-color: yellow;
+        }
+        td{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td id="th-1">Columna 1</td>
+                <td id="th-2">Columna 2</td>
+                <td id="th-3">Columna 3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td rowspan="2">Dato 3</td>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <!-- <td>Dato 3</td> -->
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td rowspan="2">Dato 3</td>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <!-- <td>Dato 3</td> -->
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container">
+        <p>
+            <span>hola </span>  <b>mundo!</b>
+        </p>
+    </div>
+
+    <div class="container">
+    </div>
+
+    <div class="container segunda-clase">
+    </div>
+
+    <div class="container">
+    </div>
+</body>
+</html>
